@@ -30,11 +30,17 @@ public class AppTest {
         assertEquals(a, 6);
 
     }
+    @Test
+    public void testdlv1() {
+        int a = app.div(6, 2);
+        assertEquals(a, 3);
+
+    }
 
     @Test
     public void testdlv() {
-        int a = app.div(6, 0);
-        assertEquals(a, 0);
+        int a = app.div(6, 1);
+        assertEquals(a, 6);
 
     }
 }
