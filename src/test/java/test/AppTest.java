@@ -13,21 +13,37 @@ public class AppTest {
     App app = new App();
 
     @Test
-    public void testAdd() {
+    public void testAdd1() {
         int a = app.add(2, 3);
         assertEquals(a, 5);
     }
-
     @Test
-    public void testsub() {
-        int a = app.sub(8, 3);
-        assertEquals(a, 5);
+    public void testAdd() {
+        int a = app.add(2, 3);
+        assertEquals(a, 6);
     }
 
     @Test
-    public void testmul() {
+    public void testsub1() {
+        int a = app.sub(8, 3);
+        assertEquals(a, 5);
+    }
+    @Test
+    public void testsub() {
+        int a = app.sub(8, 3);
+        assertEquals(a, 4);
+    }
+
+    @Test
+    public void testmul1() {
         int a = app.mul(2, 3);
         assertEquals(a, 6);
+
+    }
+    @Test
+    public void testmul() {
+        int a = app.mul(2, 3);
+        assertEquals(a, 7);
 
     }
     @Test
