@@ -154,7 +154,7 @@
         <version>2.6</version>
       <configuration>
       <!--生成报告所需result源文件目录-->
-      <resultsDirectory>./${timestamp}/allure-results</resultsDirectory>
+      <resultsDirectory>./allure-results</resultsDirectory>
       <!--@Issue以及@TestCaseId中的链接配置，%s为id占位符-->
       <properties>
         <allure.issues.tracker.pattern>http://172.16.11.183:8082/browse/%s</allure.issues.tracker.pattern>
