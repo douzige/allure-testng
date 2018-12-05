@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/ideaporject/allure">
+        <classes><class name="test.AppTest"><methods><include name="testAdd"/>
+            <include name="testsub"/><include name="testmul"/><include name="testdlv"/>
+        </methods></class></classes></test></suite>
