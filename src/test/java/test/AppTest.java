@@ -59,4 +59,8 @@ public class AppTest {
         assertEquals(a, 6);
 
     }
+    public void testDlv2(){
+        int a = app.div(100, 2);
+        assertEquals(a,50);
+    }
 }
