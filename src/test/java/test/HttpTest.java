@@ -3,6 +3,7 @@ package test;
 import common.HttpUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.io.IOException;
 
@@ -10,6 +11,7 @@ import java.io.IOException;
  * @author ceshi_chen
  * @version $Id: HttpTest,  2019/9/5 18:22 ceshi_chen Exp$
  */
+@Title("http的测试类")
 public class HttpTest {
     /**
      * 测试http get请求，判断返回值长度>0

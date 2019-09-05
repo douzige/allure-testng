@@ -2,6 +2,7 @@ package test;
 
 
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 import servers.App;
 
 import static org.testng.Assert.assertEquals;
@@ -9,6 +10,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Unit test for simple App.
  */
+@Title("计算的测试类")
 public class AppTest {
     App app = new App();
 
