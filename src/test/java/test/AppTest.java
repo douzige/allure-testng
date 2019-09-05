@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Unit test for simple App.
  */
-@Title("计算的测试类")
+@Title("测试加法类")
 public class AppTest {
     App app = new App();
     @Title("测试加法3+2")

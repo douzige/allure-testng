@@ -1,10 +1,14 @@
 package test;
 
 import common.HttpUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
+
+
 
 import java.io.IOException;
 
@@ -14,6 +18,7 @@ import java.io.IOException;
  */
 
 public class HttpTest {
+    private static final Logger logger = LoggerFactory.getLogger(HttpTest.class);
     /**
      * 测试http get请求，判断返回值长度>0
      */
@@ -21,14 +26,16 @@ public class HttpTest {
     @Test(description = "测试http get 请求")
     public void  testGet(){
        String  url ="http://118.24.50.232:8080/demo/get/1";
-       Reporter.log("请求地址"+url);
+
+       logger.info("请求地址"+url);
        String value = "";
         try {
             value = HttpUtils.httpGet(url);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Reporter.log("输出结果:"+value);
+
+        logger.info("输出结果:"+value);
         Assert.assertTrue(value.length()>0);
     }
 
