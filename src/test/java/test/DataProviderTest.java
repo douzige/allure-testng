@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -37,6 +38,7 @@ public class DataProviderTest {
     }
     @Test(dataProvider = "provideNumbers",description = "测试参数化的乘法")
     public void  testMul_a(int a,int b){
+
         int result = app.mul(a,b);
         Assert.assertEquals(result,a*b);
     }
