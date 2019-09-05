@@ -3,6 +3,8 @@ package test;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 import servers.App;
 
 /**
@@ -20,12 +22,14 @@ public class DataProviderTest {
 
         return new Object[][] { { 10, 20 }, { 100, 110 }, { 200, 210 } };
     }
+    @Step("正确的用例,参数化用例第1步、、第二步")
     @Test(dataProvider ="provideNumbers")
     public void testAdd_a(int a,int b){
        int reslut =  app.add(a,b);
         Assert.assertEquals(reslut,a+b);
 
     }
+    @Title("测试减法")
     @Test(dataProvider = "provideNumbers")
     public void testSub_a(int a,int b){
         int result =app.sub(b,a);
