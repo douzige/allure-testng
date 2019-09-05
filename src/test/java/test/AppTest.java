@@ -63,7 +63,8 @@ public class AppTest {
         assertEquals(a, 3);
 
     }
-    @Test(description = "测试除法异常")
+
+    @Test(expectedExceptions = ArithmeticException.class,description = "测试除数为0抛出算术异常")
     public void testDlv2(){
         int a = app.div(100, 0);
         assertEquals(a,0);

@@ -29,5 +29,12 @@ public class HttpTest {
         Assert.assertTrue(value.length()>0);
     }
 
+    /**
+     * 忽略测试，该测试用例还没有准备好
+     */
+    @Test(enabled=false)
+    public   void   testPost(){
+
+    }
 
 }
