@@ -15,6 +15,7 @@ public class StringTest {
     @Test(description = "测试字符串转大写")
     public void testString(){
         String str = st.tolow("aBc");
+        System.out.println(str);
         assertEquals(str,"ABC");
     }
 

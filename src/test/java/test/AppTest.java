@@ -42,8 +42,8 @@ public class AppTest {
     }
     @Test(description = "测试乘法错误")
     public void testmul() {
-        int a = app.mul(2, 3);
-        assertEquals(a, 7);
+        int a = app.mul(20, 3);
+        assertEquals(a, 60);
 
     }
     @Test(description = "测试除法正确")

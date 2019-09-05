@@ -216,8 +216,8 @@
       <resultsDirectory>./allure-results</resultsDirectory>
       <!--@Issue以及@TestCaseId中的链接配置，%s为id占位符-->
       <properties>
-        <allure.issues.tracker.pattern>http://172.16.11.183:8082/browse/%s</allure.issues.tracker.pattern>
-        <allure.tests.management.pattern>http://172.16.11.183:8082/browse/%s</allure.tests.management.pattern>
+        <allure.issues.tracker.pattern>http://10.180.6.56:8082/browse/%s</allure.issues.tracker.pattern>
+        <allure.tests.management.pattern>http://10.180.6.56:8082/browse/%s</allure.tests.management.pattern>
       </properties>
       </configuration>
       </plugin>
