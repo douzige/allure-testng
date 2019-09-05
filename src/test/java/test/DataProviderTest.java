@@ -33,7 +33,7 @@ public class DataProviderTest {
     }
     @Test(dataProvider = "provideNumbers",description = "测试参数化的乘法")
     public void  testMul_a(int a,int b){
-        int result = app.sub(a,b);
+        int result = app.mul(a,b);
         Assert.assertEquals(result,a*b);
     }
 
