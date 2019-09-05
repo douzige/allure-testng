@@ -56,7 +56,7 @@ public class AppTest {
     @Test(description = "测试除法错误")
     public void testdlv() {
         int a = app.div(6, 1);
-        assertEquals(a, 6);
+        assertEquals(a, 3);
 
     }
     @Test(description = "测试除法异常")

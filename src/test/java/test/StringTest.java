@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class StringTest {
     StringTool  st  = new StringToolImpl();
-    @Test
+    @Test(description = "测试字符串转大写")
     public void testString(){
         String str = st.tolow("aBc");
         assertEquals(str,"ABC");
