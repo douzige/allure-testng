@@ -28,6 +28,13 @@
                     <include name="testStringUp"/>
                 </methods>
             </class>
+            <class name="test.DataProviderTest">
+                <methods>
+                    <include name="testAdd_a"/>
+                    <include name="testSub_a"/>
+                    <include name="testMul_a"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
