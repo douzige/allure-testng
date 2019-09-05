@@ -2,6 +2,7 @@ package test;
 
 
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Title;
 import servers.App;
 
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertEquals;
 @Title("计算的测试类")
 public class AppTest {
     App app = new App();
-
+    @Title("测试加法3+2")
     @Test(description = "测试加法2+5")
     public void testAdd1() {
         int a = app.add(2, 3);
@@ -24,7 +25,7 @@ public class AppTest {
         int a = app.add(20, 30);
         assertEquals(a, 60);
     }
-
+    @Title("测试减法")
     @Test(description = "测试减法正确")
     public void testsub1() {
         int a = app.sub(8, 3);
@@ -35,7 +36,7 @@ public class AppTest {
         int a = app.sub(8, 3);
         assertEquals(a, 4);
     }
-
+    @Title("测试乘法")
     @Test(description = "测试乘法正确")
     public void testmul1() {
         int a = app.mul(2, 3);
@@ -48,6 +49,7 @@ public class AppTest {
         assertEquals(a, 60);
 
     }
+    @Title("测试除法")
     @Test(description = "测试除法正确")
     public void testdlv1() {
         int a = app.div(6, 2);

@@ -16,7 +16,7 @@ public class HttpTest {
     /**
      * 测试http get请求，判断返回值长度>0
      */
-    @Title("http的测试类")
+    @Title("http的测试类,正确的请求")
     @Test(description = "测试http get 请求")
     public void  testGet(){
        String  url ="http://118.24.50.232:8080/demo/get/1";

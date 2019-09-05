@@ -17,7 +17,6 @@ public class StringTest {
     StringTool  st  = new StringToolImpl();
     @Test(description = "测试字符串转大写")
     @Title("字符串类的测试")
-    @Description("测试字符串转小写,是故意错误的！")
     public void testString(){
         String str = st.tolow("aBc");
         System.out.println(str);
